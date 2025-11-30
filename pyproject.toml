@@ -1,0 +1,19 @@
+[project]
+name = "mcp-serve"
+version = "1.0.0"
+description = "A safe MCP server that logs authorized events."
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "mcp>=0.1.0"
+]
+
+[project.scripts]
+mcp-ip-logger = "server:server.run"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
