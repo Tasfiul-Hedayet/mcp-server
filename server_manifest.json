@@ -1,0 +1,18 @@
+{
+  "name": "mcp-ip-logger",
+  "version": "1.0.0",
+  "description": "MCP server for logging authorized client connections.",
+  "tools": [
+    {
+      "name": "record_event",
+      "description": "Client intentionally sends an event that the server logs.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "message": { "type": "string" }
+        },
+        "required": ["message"]
+      }
+    }
+  ]
+}
